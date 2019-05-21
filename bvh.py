@@ -244,15 +244,15 @@ class Bvh:
 
     def parse_file(self, path):
         with open(path, 'r') as f:
-            anim.parse_string(f.read())
+            self.parse_string(f.read())
 
     def plot_all_frames(self):
         import matplotlib.pyplot as plt
         from mpl_toolkits.mplot3d import axes3d, Axes3D
         fig = plt.figure()
         ax = fig.add_subplot(111, projection='3d')
-        for i in range(anim.frames):
-            anim.plot_frame(i, fig, ax)
+        for i in range(self.frames):
+            self.plot_frame(i, fig, ax)
 
     def __repr__(self):
         return f"BVH {len(self.joints.keys())} joints, {self.frames} frames"
