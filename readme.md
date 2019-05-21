@@ -1,5 +1,4 @@
 # npybvh
-----------
 Python 3 module for reading Biovision Hierarchy (BVH) files and convert keyframes to poses.
 
 # Features
