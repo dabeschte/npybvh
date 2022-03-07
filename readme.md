@@ -16,7 +16,7 @@ Python 3 module for reading Biovision Hierarchy (BVH) files and convert keyframe
 # How to use
 ```python
 anim = Bvh()
-anim.load('example.bvh')
+anim.parse_file('example.bvh')
 # get position at frame 11
 positions, rotations = anim.frame_pos(11)
 
